@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "124385270856",
+    "project_id": "all-in-one-downloader-f939e",
+    "storage_bucket": "all-in-one-downloader-f939e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124385270856:android:5058753527e5df9856cc7d",
+        "android_client_info": {
+          "package_name": "com.campusrecruitmentsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124385270856-jp12aeulnn0fa7tqbhof5rql9pp6dqfn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsAbgNrM2sz6aD78wgA3GpKPp74CrV9pU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124385270856-jp12aeulnn0fa7tqbhof5rql9pp6dqfn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124385270856:android:7bc277e10424c8b056cc7d",
+        "android_client_info": {
+          "package_name": "com.myt.allinonevideodownloader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124385270856-jp12aeulnn0fa7tqbhof5rql9pp6dqfn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsAbgNrM2sz6aD78wgA3GpKPp74CrV9pU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124385270856-jp12aeulnn0fa7tqbhof5rql9pp6dqfn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/header_section"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/student_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/black"
+                    android:text="Student"
+                    android:textSize="22sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/student_roll_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textSize="14sp"
+                    android:text="Roll"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/student_name" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_arrow_down"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/details_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header_section">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/contact_no_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="@color/logoColor"
+                    android:textStyle="bold"
+                    android:text="Contact No. : "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/contact_no_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/contact_no_heading"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/profile_summary_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="@color/logoColor"
+                    android:textStyle="bold"
+                    android:text="Profile Summary : "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/contact_no_heading" />
+
+                <TextView
+                    android:id="@+id/profile_summary_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:paddingEnd="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/profile_summary_heading"
+                    app:layout_constraintTop_toTopOf="@+id/profile_summary_heading" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/key_skills_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    app:fontFamily="sans-serif-smallcaps"
+                    android:textColor="@color/logoColor"
+                    android:textStyle="bold"
+                    android:text="Key Skills : "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_summary_value" />
+
+                <TextView
+                    android:id="@+id/key_skills_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:paddingEnd="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/key_skills_heading"
+                    app:layout_constraintTop_toTopOf="@+id/key_skills_heading" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/class_tenth_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="@color/logoColor"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Class X"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/key_skills_value" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tenth_percentage_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="@color/logoColor"
+                    android:textStyle="bold"
+                    android:text="Percentage : "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/class_tenth_heading" />
+
+                <TextView
+                    android:id="@+id/tenth_percentage_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintStart_toEndOf="@+id/tenth_percentage_heading"
+                    app:layout_constraintTop_toTopOf="@+id/tenth_percentage_heading" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tenth_board_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="@color/logoColor"
+                    android:textStyle="bold"
+                    android:text="Board : "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tenth_percentage_heading" />
+
+                <TextView
+                    android:id="@+id/tenth_board_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintStart_toEndOf="@+id/tenth_board_heading"
+                    app:layout_constraintTop_toTopOf="@+id/tenth_board_heading" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/class_twelfth_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="@color/logoColor"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Class XII"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tenth_board_heading" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/twelfth_percentage_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="@color/logoColor"
+                    android:textStyle="bold"
+                    android:text="Percentage : "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/class_twelfth_heading" />
+
+                <TextView
+                    android:id="@+id/twelfth_percentage_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintStart_toEndOf="@+id/twelfth_percentage_heading"
+                    app:layout_constraintTop_toTopOf="@+id/twelfth_percentage_heading" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/twelfth_board_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="@color/logoColor"
+                    android:textStyle="bold"
+                    android:text="Board : "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/twelfth_percentage_heading" />
+
+                <TextView
+                    android:id="@+id/twelfth_board_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintStart_toEndOf="@+id/twelfth_board_heading"
+                    app:layout_constraintTop_toTopOf="@+id/twelfth_board_heading" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/graduation_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="@color/logoColor"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Graduation"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/twelfth_board_heading" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/graduation_percentage_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="@color/logoColor"
+                    android:textStyle="bold"
+                    android:text="Percentage : "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/graduation_heading" />
+
+                <TextView
+                    android:id="@+id/graduation_percentage_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintStart_toEndOf="@+id/graduation_percentage_heading"
+                    app:layout_constraintTop_toTopOf="@+id/graduation_percentage_heading" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/graduation_stream_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="@color/logoColor"
+                    android:textStyle="bold"
+                    android:text="Stream : "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/graduation_percentage_heading" />
+
+                <TextView
+                    android:id="@+id/graduation_stream_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintStart_toEndOf="@+id/graduation_stream_heading"
+                    app:layout_constraintTop_toTopOf="@+id/graduation_stream_heading" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/accept_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="10dp"
+                    android:text="ACCEPT"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/logoColor"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/reject_button"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/graduation_stream_value" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/reject_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="10dp"
+                    android:text="REJECT"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/red"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/accept_button"
+                    app:layout_constraintTop_toBottomOf="@+id/graduation_stream_value" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/block_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="10dp"
+                    android:text="BLOCK"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/red"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/graduation_stream_value" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

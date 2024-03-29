@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/student_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.campusrecruitmentsystem.fragments.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_apply_for_jobs"
+        android:name="com.campusrecruitmentsystem.fragments.student.ApplyForJobFragment"
+        android:label="@string/menu_apply_for_jobs"
+        tools:layout="@layout/fragment_apply_for_job" />
+
+    <fragment
+        android:id="@+id/nav_view_job_status"
+        android:name="com.campusrecruitmentsystem.fragments.student.ViewJobStatusFragment"
+        android:label="@string/menu_view_job_status"
+        tools:layout="@layout/fragment_view_job_status" />
+
+    <fragment
+        android:id="@+id/nav_update_details"
+        android:name="com.campusrecruitmentsystem.fragments.UpdateDetailsFragment"
+        android:label="@string/menu_update_details"
+        tools:layout="@layout/fragment_update_details" />
+
+    <fragment
+        android:id="@+id/nav_change_password"
+        android:name="com.campusrecruitmentsystem.fragments.ChangePasswordFragment"
+        android:label="@string/menu_change_password"
+        tools:layout="@layout/fragment_change_password" />
+
+</navigation>

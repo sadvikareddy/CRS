@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".JobDescriptionActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.PopupOverlay"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/logoColor"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Job Details"
+            app:titleTextColor="@color/white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Company Name"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/companyNameValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/roboto"
+                android:text="Company Name Value"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Company Market"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/companyMarketValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/roboto"
+                android:text="Company Market Value"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Job Description"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/jobDescriptionValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/roboto"
+                android:text="Job decription Value"
+                android:textColor="@color/black" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/batchHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Batch: "
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/batchValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Batch Value"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/batchHeading"
+                    app:layout_constraintTop_toTopOf="@+id/batchHeading" />
+
+                <TextView
+                    android:id="@+id/employmentTypeHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Employment Type: "
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/batchHeading" />
+
+                <TextView
+                    android:id="@+id/employmentTypeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Employment Type Value"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/employmentTypeHeading"
+                    app:layout_constraintTop_toTopOf="@+id/employmentTypeHeading" />
+
+                <TextView
+                    android:id="@+id/jobRoleHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Job Role: "
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/employmentTypeHeading" />
+
+                <TextView
+                    android:id="@+id/jobRoleValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Job Role Value"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/jobRoleHeading"
+                    app:layout_constraintTop_toTopOf="@+id/jobRoleHeading" />
+
+                <TextView
+                    android:id="@+id/jobLocationHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Job Location: "
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/jobRoleHeading" />
+
+                <TextView
+                    android:id="@+id/jobLocationValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Job Location Value"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/jobLocationHeading"
+                    app:layout_constraintTop_toTopOf="@+id/jobLocationHeading" />
+
+                <TextView
+                    android:id="@+id/probationHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Probation Period: "
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/jobLocationHeading" />
+
+                <TextView
+                    android:id="@+id/probationValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Probation Period Value"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/probationHeading"
+                    app:layout_constraintTop_toTopOf="@+id/probationHeading" />
+
+                <TextView
+                    android:id="@+id/salaryDuringProbationHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Salary (During Probation): "
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/probationHeading" />
+
+                <TextView
+                    android:id="@+id/salaryDuringProbationValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Salary Value"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/salaryDuringProbationHeading"
+                    app:layout_constraintTop_toTopOf="@+id/salaryDuringProbationHeading" />
+
+                <TextView
+                    android:id="@+id/salaryAfterProbationHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Salary (After Probation): "
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/salaryDuringProbationHeading" />
+
+                <TextView
+                    android:id="@+id/salaryAfterProbationValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Salary Value"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/salaryAfterProbationHeading"
+                    app:layout_constraintTop_toTopOf="@+id/salaryAfterProbationHeading" />
+
+                <TextView
+                    android:id="@+id/bondHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Bond: "
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/salaryAfterProbationHeading" />
+
+                <TextView
+                    android:id="@+id/bondValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Bond Value"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/bondHeading"
+                    app:layout_constraintTop_toTopOf="@+id/bondHeading" />
+
+                <TextView
+                    android:id="@+id/workingDaysHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Working Days: "
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bondHeading" />
+
+                <TextView
+                    android:id="@+id/workingDaysValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Working Days Value"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/workingDaysHeading"
+                    app:layout_constraintTop_toTopOf="@+id/workingDaysHeading" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Message for students"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/messageValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/roboto"
+                android:text="Message Value"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Eligibility Criteria"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="12th Percentage"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/twelfthPercentageValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/roboto"
+                android:text="12th Percentage Value"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Graduation Percentage"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/graduationPercentageValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/roboto"
+                android:text="Graduation Percentage Value"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Number of allowed backlogs"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/backlogsValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/roboto"
+                android:text="Backlogs Value"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Hiring Process"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/hiringProcessValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/roboto"
+                android:text="Hiring Process Value"
+                android:textColor="@color/black" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/apply_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_login_btn"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingHorizontal="30dp"
+                android:text="Apply"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/cardColor" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

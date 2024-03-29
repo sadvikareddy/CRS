@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SignUpActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="start"
+                android:layout_marginStart="-13dp"
+                android:rotation="90"
+                android:src="@drawable/ic_arrow_down" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center_horizontal"
+                android:text="Create Account"
+                android:textColor="@color/cardColor"
+                android:textSize="25sp" />
+
+            <RadioGroup
+                android:id="@+id/accountTypeRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/superAdminRadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_button_background"
+                    android:button="@null"
+                    android:elevation="1dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center"
+                    android:paddingVertical="10dp"
+                    android:text="Super Admin"
+                    android:visibility="gone"
+                    android:textColor="@drawable/radio_button_text_color"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/adminRadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_button_background"
+                    android:button="@null"
+                    android:elevation="1dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center"
+                    android:paddingVertical="10dp"
+                    android:text="Admin"
+                    android:textColor="@drawable/radio_button_text_color"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/studentRadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_button_background"
+                    android:button="@null"
+                    android:elevation="1dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center"
+                    android:paddingVertical="10dp"
+                    android:text="Student"
+                    android:textColor="@drawable/radio_button_text_color"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/companyRadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_button_background"
+                    android:button="@null"
+                    android:elevation="1dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center"
+                    android:paddingVertical="10dp"
+                    android:text="Company"
+                    android:textColor="@drawable/radio_button_text_color"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/userFullName"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Full Name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/companyLocation"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Company Location"
+                android:inputType="text"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/userCollegeRollNo"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Roll No."
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/userEmailId"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Email Id"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/userContactNo"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:digits="0123456789"
+                android:hint="Phone Number"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLength="10" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/userPassword"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/userConfirmPassword"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Confirm Password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signUpButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_login_btn"
+                android:text="Sign Up"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/cardColor" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/loading_section"
+        layout="@layout/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

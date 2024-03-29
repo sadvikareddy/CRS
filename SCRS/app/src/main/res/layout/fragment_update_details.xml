@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".fragments.UpdateDetailsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/fullNameEditText"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:hint="Full Name"
+                android:imeOptions="actionNext"
+                android:inputType="text" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/contactNoEditText"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:hint="Contact Number"
+                android:imeOptions="actionGo"
+                android:inputType="phone"
+                android:maxLength="10" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/studentSection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/rollNoEditText"
+                    style="@style/EditTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="Roll Number"
+                    android:imeOptions="actionNext" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/profileSummaryEditText"
+                    style="@style/EditTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="Profile Summary"
+                    android:maxLength="150" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/keySkillsEditText"
+                    style="@style/EditTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="Key Skills"
+                    android:imeOptions="actionNext" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Class X"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/tenthPercentageEditText"
+                    style="@style/EditTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="Percentage"
+                    android:imeOptions="actionGo"
+                    android:inputType="number"
+                    android:maxLength="2" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/tenthBoardEditText"
+                    style="@style/EditTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="Board"
+                    android:imeOptions="actionGo" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/tenthSchoolEditText"
+                    style="@style/EditTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="School"
+                    android:imeOptions="actionGo" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/tenthCityEditText"
+                    style="@style/EditTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="City"
+                    android:imeOptions="actionGo" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Class XII"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/twelfthPercentageEditText"
+                    style="@style/EditTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="Percentage"
+                    android:imeOptions="actionGo"
+                    android:inputType="number"
+                    android:maxLength="2" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/twelfthBoardEditText"
+                    style="@style/EditTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="Board"
+                    android:imeOptions="actionGo" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/twelfthSchoolEditText"
+                    style="@style/EditTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="School"
+                    android:imeOptions="actionGo" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/twelfthCityEditText"
+                    style="@style/EditTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="City"
+                    android:imeOptions="actionGo" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Graduation"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/graduationPercentageEditText"
+                    style="@style/EditTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="Percentage"
+                    android:imeOptions="actionGo"
+                    android:inputType="number"
+                    android:maxLength="2" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/graduationStreamEditText"
+                    style="@style/EditTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="Stream"
+                    android:imeOptions="actionGo" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/graduationCollegeEditText"
+                    style="@style/EditTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="Institute/College"
+                    android:imeOptions="actionGo" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/graduationUniversityEditText"
+                    style="@style/EditTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="University"
+                    android:imeOptions="actionGo" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/graduationCityEditText"
+                    style="@style/EditTextTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="University"
+                    android:imeOptions="actionDone" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/updateButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_login_btn"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingHorizontal="50dp"
+                android:text="update"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/cardColor" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

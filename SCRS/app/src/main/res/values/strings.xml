@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Campus Recruitment System</string>
+    <string-array name="signup_spinner_id">
+
+        <item>Admin</item>
+
+        <item>Student</item>
+
+        <item>Company</item>
+
+    </string-array>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_apply_for_jobs">Apply for Jobs</string>
+    <string name="menu_view_job_status">View Job Status</string>
+    <string name="menu_search_jobs">Search Jobs</string>
+    <string name="menu_update_details">Update Details</string>
+    <string name="menu_change_password">Change Password</string>
+    <string name="about_us">About Us</string>
+    <string name="menu_post_jobs">Post Jobs</string>
+    <string name="menu_view_student_applications">View Students Application</string>
+    <string name="menu_manage_student">Manage Student</string>
+    <string name="menu_manage_company">Manage Company</string>
+    <string name="menu_manage_admin">Manage Admin</string>
+
+    <string name="account_type">accountType</string>
+
+</resources>
